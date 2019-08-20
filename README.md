@@ -55,3 +55,5 @@ The actions are named: sa, sb, ss, ra, rb, rr, rra, rrb, rrr, pa, pb.
 * re
 * clean
 * fclean
+
+[image source](https://medium.com/@jamierobertdawson/push-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a)
