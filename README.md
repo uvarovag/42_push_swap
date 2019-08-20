@@ -49,3 +49,9 @@ The actions are named: sa, sb, ss, ra, rb, rr, rra, rrb, rrr, pa, pb.
 
 ### Sample comands "pa, pb"
 ![sample comands "pa, pb"](https://miro.medium.com/max/700/1*kE_2S1E4IoJxRF4eVt6TAQ.png)
+
+## Makefile rules
+*all
+*re
+*clean
+*fclean
