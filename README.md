@@ -32,11 +32,11 @@ pa
 
 ## Here’s how they all work:
 
+![sample stacks](https://miro.medium.com/max/700/1*rXKk8juFHQaLzI-uJyEVog.png)
+
 ```
 The actions are named: sa, sb, ss, ra, rb, rr, rra, rrb, rrr, pa, pb.
 ```
-
-![sample stacks](https://miro.medium.com/max/700/1*rXKk8juFHQaLzI-uJyEVog.png)
 
 ### Sample comands "sa, sb, ss"
 ![sample comands "sa, sb, ss"](https://miro.medium.com/max/700/1*dAHbFo-fEko25X-C8CVeKw.png)
