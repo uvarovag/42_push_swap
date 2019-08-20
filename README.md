@@ -49,6 +49,7 @@ The actions are named: sa, sb, ss, ra, rb, rr, rra, rrb, rrr, pa, pb.
 
 ### Sample commands "pa, pb"
 ![sample comands "pa, pb"](https://miro.medium.com/max/700/1*kE_2S1E4IoJxRF4eVt6TAQ.png)
+
 [image source](https://medium.com/@jamierobertdawson/push-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a)
 
 ## Makefile rules
