@@ -17,6 +17,7 @@ OK
 The second one called push_swap which calculates and displays on the standard
 output the smallest progam using Push_swap instruction language that sorts integer arguments received.
 There’s only a few moves you’re allowed to used to manipulate the stacks that we’re going to called “Actions”. The main goal of this project is to organize Stack A in as few actions as possible.
+
 ```
 $>./push_swap 2 1 3 6 5 8
 sa
@@ -28,13 +29,14 @@ pa
 pa
 pa
 ```
-![sample stacks](https://miro.medium.com/max/700/1*rXKk8juFHQaLzI-uJyEVog.png)
 
-So what actions are we allowed to use on the two stacks?
+## Here’s how they all work:
+
 ```
 The actions are named: sa, sb, ss, ra, rb, rr, rra, rrb, rrr, pa, pb.
 ```
-## Here’s how they all work:
+
+![sample stacks](https://miro.medium.com/max/700/1*rXKk8juFHQaLzI-uJyEVog.png)
 
 ### Sample comands "sa, sb, ss"
 ![sample comands "sa, sb, ss"](https://miro.medium.com/max/700/1*dAHbFo-fEko25X-C8CVeKw.png)
