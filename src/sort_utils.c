@@ -12,7 +12,7 @@
 
 #include "ft_push_swap.h"
 
-void		ft_ps_set_index(t_stack *st)
+void		set_index(t_stack *st)
 {
 	int i;
 
@@ -25,7 +25,7 @@ void		ft_ps_set_index(t_stack *st)
 	}
 }
 
-t_stack		*ft_ps_get_max_sort(t_stack *st)
+t_stack		*get_max_sort(t_stack *st)
 {
 	t_stack	*tmp;
 	t_stack *first;
@@ -35,7 +35,7 @@ t_stack		*ft_ps_get_max_sort(t_stack *st)
 
 	first = st;
 	max = st;
-	nodes = ft_ps_get_count_nodes(st);
+	nodes = get_count_nodes(st);
 	while (st)
 	{
 		tmp = st;
@@ -54,7 +54,7 @@ t_stack		*ft_ps_get_max_sort(t_stack *st)
 	return (max);
 }
 
-int			ft_ps_node_iter_to_up(int st_len, int node_i)
+int			node_iter_to_up(int st_len, int node_i)
 {
 	if (st_len / 2 >= node_i)
 		return (node_i);
@@ -62,7 +62,7 @@ int			ft_ps_node_iter_to_up(int st_len, int node_i)
 		return ((st_len - node_i) * -1);
 }
 
-int			ft_ps_get_node_place_i(t_stack *st, int node_val)
+int			get_node_place_i(t_stack *st, int node_val)
 {
 	t_stack *optim;
 	int		last_min;
@@ -87,7 +87,7 @@ int			ft_ps_get_node_place_i(t_stack *st, int node_val)
 	return (last_min < 0 ? optim->i + 1 : optim->i);
 }
 
-int			ft_ps_node_b_to_a_count(int a, int b, int place_b)
+int			node_b_to_a_count(int a, int b, int place_b)
 {
 	if (a > 0 && b > 0 && place_b != -1)
 		return (a > b ? a : b);

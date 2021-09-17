@@ -12,7 +12,7 @@
 
 #include "ft_push_swap.h"
 
-t_stack			*ft_ps_stack_pop_front(t_stack **stack)
+t_stack			*stack_pop_front(t_stack **stack)
 {
 	t_stack *tmp;
 
@@ -27,7 +27,7 @@ t_stack			*ft_ps_stack_pop_front(t_stack **stack)
 	return (tmp);
 }
 
-t_stack			*ft_ps_stack_pop_back(t_stack **stack)
+t_stack			*stack_pop_back(t_stack **stack)
 {
 	t_stack *pre_last;
 	t_stack *tmp;

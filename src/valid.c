@@ -12,7 +12,7 @@
 
 #include "ft_push_swap.h"
 
-int	ft_ps_is_valid_int(int val_i, char *val_c)
+int	is_valid_int(int val_i, char *val_c)
 {
 	char	*cur_val;
 	int		res;
@@ -26,7 +26,7 @@ int	ft_ps_is_valid_int(int val_i, char *val_c)
 	return (res);
 }
 
-int	ft_ps_is_not_dupl(t_stack *st, int val)
+int	is_not_dupl(t_stack *st, int val)
 {
 	while (st)
 	{
@@ -37,7 +37,7 @@ int	ft_ps_is_not_dupl(t_stack *st, int val)
 	return (1);
 }
 
-int	ft_ps_is_sort_stacks(t_stacks *sts)
+int	is_sort_stacks(t_stacks *sts)
 {
 	t_stack	*st_a;
 	int		last_val;

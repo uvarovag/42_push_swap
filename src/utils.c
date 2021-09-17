@@ -12,7 +12,7 @@
 
 #include "ft_push_swap.h"
 
-static void	ft_ps_stack_free(t_stack **st)
+static void	stack_free(t_stack **st)
 {
 	t_stack	*next;
 
@@ -24,33 +24,33 @@ static void	ft_ps_stack_free(t_stack **st)
 	}
 }
 
-int			ft_ps_stacks_free(t_stacks **sts, int ret_val)
+int			stacks_free(t_stacks **sts, int ret_val)
 {
 	if (*sts && (*sts)->a)
-		ft_ps_stack_free(&(*sts)->a);
+		stack_free(&(*sts)->a);
 	if (*sts && (*sts)->b)
-		ft_ps_stack_free(&(*sts)->b);
+		stack_free(&(*sts)->b);
 	if (*sts)
 		free(*sts);
 	return (ret_val);
 }
 
-void		ft_ps_put_error(t_stacks **sts, int ret_val)
+void		put_error(t_stacks **sts, int ret_val)
 {
 	ft_putstr("Error\n");
-	ft_ps_stacks_free(sts, ret_val);
+	stacks_free(sts, ret_val);
 	exit(ret_val);
 }
 
-int			ft_ps_st_set_tmp_cmds(t_stacks *sts, t_stack *tmp_b)
+int			st_set_tmp_cmds(t_stacks *sts, t_stack *tmp_b)
 {
-	sts->tmp_pl = ft_ps_get_node_place_i(sts->a, tmp_b->val);
-	sts->tmp_b = ft_ps_node_iter_to_up(sts->len_b, tmp_b->i);
-	sts->tmp_a = ft_ps_node_iter_to_up(sts->len_a, sts->tmp_pl);
-	return (ft_ps_node_b_to_a_count(sts->tmp_a, sts->tmp_b, sts->tmp_pl));
+	sts->tmp_pl = get_node_place_i(sts->a, tmp_b->val);
+	sts->tmp_b = node_iter_to_up(sts->len_b, tmp_b->i);
+	sts->tmp_a = node_iter_to_up(sts->len_a, sts->tmp_pl);
+	return (node_b_to_a_count(sts->tmp_a, sts->tmp_b, sts->tmp_pl));
 }
 
-void		ft_ps_st_copy_tmp_to_opt_cmds(t_stacks *sts)
+void		st_copy_tmp_to_opt_cmds(t_stacks *sts)
 {
 	sts->opt_pl = sts->tmp_pl;
 	sts->opt_b = sts->tmp_b;
